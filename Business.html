@@ -1,24 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><title>Business - MUSTY PLUGS</title>
-<style>
-  body { font-family: Arial; background: #f4f7fc; padding: 40px; text-align: center; }
-  h1 { color: #002855; }
-  .box { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 600px; margin: 20px auto; }
-  a { color: #00509d; text-decoration: none; font-weight: bold; }
-  a:visited { color: #ff6600; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Inventory - Al-Mustapha</title>
+  <style>
+    body {font-family: 'Segoe UI', Arial, sans-serif; background: #f0f4f9; margin:0; padding:0;}
+    .navbar {background: linear-gradient(135deg, #1e3a8a, #3b82f6); color:white; padding:15px 30px; text-align:center;}
+    .container {max-width: 1000px; margin:40px auto; background:white; padding:40px; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.1);}
+    h1 {color:#1e3a8a; text-align:center; margin-bottom:30px;}
+    .business-grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:25px;}
+    .business-card {background:#eef2f7; padding:25px; border-radius:12px; border-left:5px solid #1e3a8a;}
+    .business-card h3 {color:#1e3a8a; margin-bottom:10px; font-size:20px;}
+    .business-card p {color:#555; line-height:1.6;}
+    .video-box {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 for YouTube */
+      height: 0;
+      overflow: hidden;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+    .video-box iframe {
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .tailor-img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 15px;
+      border: 3px solid #1e3a8a;
+    }
+    a.back {color:#1e3a8a; text-decoration:none; display:inline-block; margin-top:30px; font-weight:bold;}
+  </style>
 </head>
 <body>
-  <h1>My Business</h1>
-  <div class="box">
-    <h2>1. Tailoring</h2>
-    <p>Custom designs for men. Quality stitching and fast delivery.</p>
-    <h2>2. Efootball Accounts</h2>
-    <p>I buy and sell Efootball accounts. DM me for available accounts.</p>
+
+  <div class="navbar">
+    <h2>📚 My Businesses & Skills</h2>
   </div>
-  <a href="about.html">← Back to About</a> | 
-  <a href="contact.html">Next: Contact →</a>
+
+  <div class="container">
+    <h1>What I Do</h1>
+    
+    <div class="business-grid">
+      
+      <!-- 1. WEB DEVELOPMENT -->
+      <div class="business-card">
+        <h3>💻 Web Development</h3>
+        <p>I build websites and web apps using HTML, CSS, and JavaScript. I also learn React and backend. Available for freelance projects.</p>
+      </div>
+
+      <!-- 2. TAILORING -->
+      <div class="business-card">
+        <h3>✂️ Tailoring</h3>
+        <p>I design and sew modern and traditional wears. Quality and neat stitching guaranteed.</p>
+        <!-- YOUR TAILORING IMAGE -->
+        <img src="14da610788589b6ddd908810d8f0a2b1.png" alt="My Tailoring Work" class="tailor-img">
+      </div>
+
+      <!-- 3. EFOOTBALL BUSINESS -->
+      <div class="business-card">
+        <h3>🎮 eFootball Business</h3>
+        <p>I sell eFootball accounts, coins, and do coaching. Watch my gameplay and tutorials below:</p>
+        <!-- YOUR YOUTUBE VIDEO -->
+        <div class="video-box">
+          <iframe src="https://www.youtube.com/embed/mhVPhMnMESc" 
+            title="eFootball Business" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+
+    <a href="index.html" class="back">← Back to Dashboard</a>
+  </div>
+
 </body>
 </html>
